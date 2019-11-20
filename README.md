@@ -1,7 +1,9 @@
 
 # Proposed Approach
 
-scrapy_scraper_v2.py : This is a python based web scraper which uses scrapy framework to extract data based on the keywords 
+Module 1  - scrapy_scraper_v2.py : 
+
+This is a python based web scraper which uses scrapy framework to extract data based on the keywords 
 passed as arguments. This module carries out a google keyword search on the org name passed as the parameter to extract
 the probable domain or website address of that particular organization. After this step, the scraper method parses the website
 for keywords from the home page, filters out the stop words and creates a list of relevant content which can be used for
@@ -11,7 +13,9 @@ Eg. "Healthcare" : ["Health","Provider","Medicare","Coverage","Dental","Insuranc
 A keyword processor carries out the word matching to predict the probale domain and functional are and a confidence score
 based on the number of key words matched.
 
-classifier.py : This is another proposed solution for this problem which can be an improvement upon the version of system
+Module 2  -classifier.py : 
+
+This is another proposed solution for this problem which can be an improvement upon the version of system
 suggested above. This implements a MultonimialNB classification and a NLP based algorithm for categorization.
 This module is just a blue print of what an implementation like this can be created but is still not integrated with above 
 module.
